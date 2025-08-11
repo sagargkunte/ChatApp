@@ -8,7 +8,6 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-
 io.on('connection',(socket) => {
     socket.on('userMessage',(msg) => {
         // console.log("A new user message",msg);
